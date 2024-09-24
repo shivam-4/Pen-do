@@ -1,0 +1,142 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  height: 80vh;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.left-panel, .right-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Left Panel (Task Input) */
+.left-panel {
+  flex: 1;
+  background-color: #4a90e2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-panel h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 350px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Right Panel (Task List) */
+.right-panel {
+  flex: 2;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.right-panel h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  font-size: 16px;
+  color: #333;
+}
+
+li button {
+  padding: 8px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+/* Scrollbar Styling */
+.right-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.right-panel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}

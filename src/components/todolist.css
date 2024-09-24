@@ -1,0 +1,58 @@
+/* Style the task list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between pin and delete button */
+  background-color: #f4f4f4;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Style for the circle elements (Pin and Delete Button) */
+.circle {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for the Pin */
+.pin {
+  color: white;
+  flex-shrink: 0; /* Prevents shrinking when text is long */
+  margin-right: 15px; /* Space between pin and task content */
+}
+
+/* Style for the Delete Button */
+.delButton {
+  background-color: #e74c3c; /* Red background for the delete button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevents shrinking when text is long */
+  margin-left: 15px; /* Space between task content and delete button */
+}
+
+.delButton:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Task content styling */
+.task-content {
+  flex-grow: 1; /* Allows content to take up available space */
+  font-size: 16px;
+  word-wrap: break-word; /* Ensures long words break to the next line */
+}
